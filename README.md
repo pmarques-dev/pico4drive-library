@@ -8,11 +8,16 @@ development board. These include:
  - analog multiplexer
  - power monitoring and control
 
+To use the library, just download pico4drive.cc and pico4drive.h and add them to
+your project. Adjust the F_CPU constant in pico4drive.h, if needed.
+
+
 ## Reference
 
 ### void pico4drive_init(void)
 
-Initialize the library. This sets up the PWM timers, configure the ADC and  GPIO's to appropriate states.
+Initialize the library. This sets up the PWM timers, configure the ADC and
+GPIO's to appropriate states.
 
 
 ### void pico4drive_set_motor_pwm(int driver, float value)
@@ -33,6 +38,7 @@ value in the range 0 .. 4095
 Parameter|Description
 ---|---
 channel|channel number 0..7
+
 
 ### void pico4drive_poweroff(void)
 
